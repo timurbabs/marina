@@ -5,12 +5,44 @@ body {
     background-color: #f4f4f4;
     padding: 0;
     margin: 0;
+    overflow: hidden;
 }
 
 header {
     background: #333;
     color: #fff;
     padding: 10px 0;
+}
+
+#cat-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none; /* Make it non-interactive */
+    z-index: -1; /* Put it behind other content */
+}
+
+.cat {
+    position: absolute;
+    pointer-events: auto; /* Make only the cats clickable */
+    width: 100px; /* Set a default width */
+    height: auto;
+    will-change: transform, bottom; /* Optimize for animation */
+    animation: float ease-in-out infinite alternate;
+}
+
+/* Example floating animation */
+@keyframes float {
+    from { transform: translateY(0px); }
+    to { transform: translateY(-15px); }
+}
+
+
+/* Animation for the falling effect */
+@keyframes fall {
+    to { bottom: -150%; }
 }
 
 header nav ul {
