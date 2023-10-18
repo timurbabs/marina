@@ -41,8 +41,11 @@ document.addEventListener('DOMContentLoaded', function () {
       catContainer.appendChild(cat);
       catsArray.push(cat); // Add the new cat to our tracking array
     }
-    
-    for (var i = 0; i < 4; i++) {
+  
+    // Number of cats based on viewport or fixed number, adjust as needed
+    var numberOfCats = Math.ceil(window.innerWidth / 150) * Math.ceil(window.innerHeight / 150);
+  
+    for (var i = 0; i < numberOfCats; i++) {
       createCat();
     }
   });

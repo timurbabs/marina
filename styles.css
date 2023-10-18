@@ -31,7 +31,7 @@ header {
     width: 100px; /* Set a default width */
     height: auto;
     will-change: transform, bottom; /* Optimize for animation */
-    animation: float tilting ease-in-out infinite alternate;
+    animation: float ease-in-out infinite alternate;
 }
 
 /* Example floating animation */
