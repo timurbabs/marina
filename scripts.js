@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
   
     function createCat() {
       var cat = document.createElement('img');
-      cat.src = 'images/photo1.png'; // Replace with your cat image path
+      cat.src = 'images/my-photo.png'; // Replace with your cat image path
       cat.classList.add('cat');
   
       // Suggesting fixed dimensions for calculation, can be made dynamic
