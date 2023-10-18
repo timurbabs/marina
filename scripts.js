@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
       catsArray.push(cat); // Add the new cat to our tracking array
     }
     
-    for (var i = 0; i < 7; i++) {
+    for (var i = 0; i < 4; i++) {
       createCat();
     }
   });
