@@ -1,0 +1,76 @@
+/* Общие стили */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+
+header nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    margin: 15px;
+}
+
+.about-me, .gallery {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-photo {
+    max-width: 200px;
+    margin: 10px 0;
+    border-radius: 50%;
+    animation: fadeIn 2s;
+}
+
+.gallery figure {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    animation: fadeIn 2s;
+}
+
+.gallery img {
+    max-width: 150px;
+    border-radius: 5px;
+}
+
+.gallery figcaption {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
