@@ -30,8 +30,11 @@ document.addEventListener('DOMContentLoaded', function () {
       catContainer.appendChild(cat);
     }
   
-    // Create initial cats
-    for (var i = 0; i < 10; i++) { // Adjust number of cats
+    // Calculate the number of cats based on screen size (example)
+    var numberOfCats = Math.ceil(window.innerWidth / 150) * Math.ceil(window.innerHeight / 150);
+    
+    // Create as many cats as calculated
+    for (var i = 0; i < numberOfCats; i++) {
       createCat();
     }
   });
