@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
   
     function createCat() {
       var cat = document.createElement('img');
-      cat.src = 'images/my-photo.png'; // Replace with your cat image path
+      cat.src = 'images/photo2.png'; // Replace with your cat image path
       cat.classList.add('cat');
   
       // Suggesting fixed dimensions for calculation, can be made dynamic
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // Number of cats based on viewport or fixed number, adjust as needed
     var numberOfCats = Math.ceil(window.innerWidth / 150) * Math.ceil(window.innerHeight / 150);
   
-    for (var i = 0; i < numberOfCats; i++) {
+    for (var i = 0; i < 5; i++) {
       createCat();
     }
   });
